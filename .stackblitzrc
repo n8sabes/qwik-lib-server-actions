@@ -1,0 +1,6 @@
+{
+  "startCommand": "pnpm install && pnpm dev",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
