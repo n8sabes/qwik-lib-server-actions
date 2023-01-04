@@ -4,9 +4,9 @@ import Header from '../components/header/header';
 
 export const rootLoader = loader$(() => {
   return {
-    serverTime: new Date(). toISOString(),
-    nodeVersion: process.version
-  }
+    serverTime: new Date().toISOString(),
+    nodeVersion: process.version,
+  };
 });
 
 export default component$(() => {
@@ -16,6 +16,7 @@ export default component$(() => {
     <>
       <main>
         <Header />
+        <h3 style={{ color: 'red' }}>Using qwik libs</h3>
         {root.value.serverTime}
         <section>
           <Slot />
